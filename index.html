@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A music discovery dashboard portfolio prototype using demo music data.">
+<title>Soundscape — Music Discovery Dashboard</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar"><a class="brand" href="#"><span class="brand-mark">s.</span><span>soundscape<small>YOUR LISTENING SPACE</small></span></a>
+<nav aria-label="Main navigation"><a class="active" href="#discover">⌕ <span>Discover</span></a><a href="#recent">◷ <span>Recently played</span></a><a href="#favorites">♡ <span>Favorites</span></a></nav>
+<div class="sidebar-note"><span class="live-dot"></span> DEMO LIBRARY<p>Sample data only. No music is streamed.</p></div></aside>
+<main>
+<header class="topbar"><div><p class="eyebrow">YOUR PERSONAL MUSIC SPACE</p><h1>Find your <em>next favorite.</em></h1></div><div class="avatar" aria-label="Demo profile">M</div></header>
+<section class="hero" id="discover"><div class="hero-copy"><p class="eyebrow">YOUR DAILY MIX</p><h2>A little bit of<br>everything.</h2><p>Explore the sounds, artists, and moods that make your day.</p><a class="hero-link" href="#library">Explore the library <span>↗</span></a></div><div class="hero-art" aria-hidden="true"><div class="vinyl"><span></span></div><div class="art-orbit"></div><div class="art-caption">SIDE A<br><b>GOOD<br>ENERGY</b></div></div></section>
+<section class="section" id="recent"><div class="section-head"><div><p class="eyebrow">PICK UP WHERE YOU LEFT OFF</p><h2>Recently played</h2></div><span class="section-meta">DEMO HISTORY</span></div><div id="recentList" class="recent-list"></div></section>
+<section class="section" id="library"><div class="section-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Discover music</h2></div><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search tracks or artists" aria-label="Search tracks or artists"></label></div>
+<div class="filters" id="filters"><button class="filter active" data-filter="All">All sounds</button><button class="filter" data-filter="R&B">R&B</button><button class="filter" data-filter="Pop">Pop</button><button class="filter" data-filter="Caribbean">Caribbean</button><button class="filter" data-filter="Hip-Hop">Hip-hop</button></div>
+<div id="trackGrid" class="track-grid"></div><p id="noResults" class="empty" hidden>No tracks match that search. Try another artist or mood.</p></section>
+<section class="section" id="favorites"><div class="section-head"><div><p class="eyebrow">KEEP CLOSE</p><h2>Your favorites</h2></div><span class="section-meta" id="favoriteCount">0 SAVED</span></div><div id="favoriteList" class="favorite-list"></div></section>
+<footer>Soundscape · Music discovery UI concept · Sample data, not a streaming service</footer>
+</main></div>
+</body></html>
